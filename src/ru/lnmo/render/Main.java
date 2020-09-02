@@ -18,7 +18,7 @@ public class Main extends JFrame {
     static final int h = 768;
 
     public static void draw(Graphics2D g) {
-        //Создаем буффер в который рисуем кадр
+        //Создаем буффер в который рисуем кадр.
         BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
         //Рисуем кадр
         Render.render(img);
