@@ -14,14 +14,18 @@ import java.net.URL;
 
 public class Main extends JFrame {
 
+    static final int w = 1366;
+    static final int h = 768;
+
     public static void draw(Graphics2D g) {
+        //Создаем буффер в который рисуем кадр
         BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+
         Render.render(img);
         g.drawImage(img, 0, 0, null);
     }
 
-    static final int w = 1366;
-    static final int h = 768;
+
 
     //магический код позволяющий всему работать, лучше не трогать
     public static void main(String[] args) throws InterruptedException {
