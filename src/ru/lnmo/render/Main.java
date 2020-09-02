@@ -20,7 +20,7 @@ public class Main extends JFrame {
     public static void draw(Graphics2D g) {
         //Создаем буффер в который рисуем кадр
         BufferedImage img = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
-
+        //Рисуем кадр
         Render.render(img);
         g.drawImage(img, 0, 0, null);
     }
